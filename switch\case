@@ -27,9 +27,13 @@ int main(void) {
     printf("%d multiply %d is :%d\n", number1,number2,mul) ;
     break;
     case 4 :
+    if ( number2 != 0) {
     int div = number1 / number2 ;
     int rem = number1 % number2 ;
     printf("%d division %d is %d remain is :%d\n", number1,number2,div,rem) ;
+    }else {if(number2 == 0){
+      printf("You cannot enter number2 while division.\n") ;
+    }}
     break;
     default :
     printf("ERROR, enter a valid value.\n") ;
